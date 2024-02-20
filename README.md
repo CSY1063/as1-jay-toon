@@ -18,4 +18,4 @@
 
 <h3 align="center">How did the project do on the assessment?</h3>
 
-<p align="left">Results will be announced 4 weeks after the submission date, and so will be posted then.</p>
+<p align="center">Results will be announced 4 weeks after the submission date, and so will be posted then.</p>
