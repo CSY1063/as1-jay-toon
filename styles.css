@@ -8,10 +8,6 @@
         color: black;
     }
 
-    .cn {
-        font-family: 'Noto Sans SC', sans-serif;
-        color: black;
-    }
 /* Content */
     body {
         margin: 0;
@@ -176,6 +172,16 @@
     .project-display img {
         filter: blur(0px);
         transition-duration: 500ms;
+        width: 100%;
+        border-radius: 5%;
+        box-shadow: 0px 0px 8px;
+    }
+
+    .project-display a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .project-display:hover img {
@@ -191,7 +197,7 @@
     .project-display:hover svg {
         opacity: 100%;  
         transition-duration: 350ms;
-    }   
+    }
     
     form {
         display: flex;
