@@ -48,14 +48,34 @@
         <h1 class="heading">Site Demo</h1>
     </header>
     <main style="display: flex; justify-content: center;">
-        <section class="container" style="width: 50%;">
-            <h2 class="wl-h">Site Demo Video (mp4)</h2> <!-- Shows as error, but removing this will make it go outside of the container -->
+        <section class="container" style="width: 50%; margin-inline: 5%;">
+            <h2 class="wl-h">Desktop Demo (mp4)</h2>
             <video width="100%" controls style="padding-top: 10%;">
-                <source src="/assets/site-demo.mp4" type="video/mp4">
+                <source src="/assets/desktop-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag. Please use a browser like Firefox or Chrome to view it.
+            </video>
+        </section>
+        <section class="container" style="width: 50%; margin-inline: 5%;">
+            <h2 class="wl-h">Mobile Demo (mp4)</h2>
+            <video width="100%" controls style="padding-top: 10%;">
+                <source src="/assets/mobile-demo.mp4" type="video/mp4">
                 Your browser does not support the video tag. Please use a browser like Firefox or Chrome to view it.
             </video>
         </section>
     </main>
+    <style>
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                margin-right: 7.5%; /* Weird workaround, clueless... */
+            }
+            section {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    </style>
     <footer>
         <p>&copy; 2024 Jay Toon</p>
     </footer>

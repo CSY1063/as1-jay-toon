@@ -68,15 +68,15 @@
 </body>
 <script>
     function sendEmail() {
-        // fetches by form ID's and their value
-        var name = document.getElementById("name").value;
+        // very generic format, probably used in a lot of places .w.
+        var name = document.getElementById("name").value; // Fetches value from elements within the file
         var email = document.getElementById("email").value;
         var message = document.getElementById("message").value;
 
-        var mailtoLink = "mailto:jaytoon.dev@gmail.com" + // send to this email
-            "?subject=" + encodeURIComponent("Message from https://CSY1063.github.io/as1-jay-toon/contact.html") + // subject
+        var mailtoLink = "mailto:jaytoon.dev@gmail.com" + // send to my e-mail
+            "?subject=" + encodeURIComponent("Message from https://CSY1063.github.io/as1-jay-toon/contact.html") + // subject stating the site. I could make this changable, but I don't see the point.
             "&body=" + encodeURIComponent("Name: " + name + "\n" + "Email: " + email + "\n" + "Message: " + message); // states name, submitted e-mail and message
-        window.location.href = mailtoLink;
+        window.location.href = mailtoLink; // manipulates the mailto link into sending with the data
     }
 </script>
 </html>
